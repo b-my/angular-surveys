@@ -45,7 +45,7 @@
         </div>
         <div class="mw-grid-item form-group add-new-item-widget" ng-if="!ctrl.readOnly" layout="row" layout-align="start center">
             <div flex-gt-xs="20">
-                <label translate="mwForm.question.grid.rowLabel" translate-values="{row: ctrl.question.grid.rows.length+1}">Etykieta wiersza {{ctrl.question.grid.rows.length+1}}</label>
+                <label translate-values="{row: ctrl.question.grid.rows.length+1}" translate>Row {{ctrl.question.grid.rows.length+1}}</label>
             </div>
             <div flex>
                 <div class="drag-handle">
@@ -93,7 +93,7 @@
 
         <div class="mw-grid-item form-group add-new-item-widget" ng-if="!ctrl.readOnly" layout="row" layout-align="start center">
             <div flex-gt-xs="20">
-                <label class="col-sm-2 control-label"  translate="mwForm.question.grid.columnLabel" translate-values="{col: ctrl.question.grid.cols.length+1}">Etykieta kolumny {{ctrl.question.grid.cols.length+1}}</label>
+                <label class="col-sm-2 control-label" translate-values="{col: ctrl.question.grid.cols.length+1}" translate>Column {{ctrl.question.grid.cols.length+1}}</label>
             </div>
             <div flex>
                 <div class="drag-handle">

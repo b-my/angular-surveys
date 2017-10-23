@@ -22,7 +22,7 @@
 
         </div>
         <div class="mw-grid-item form-group add-new-item-widget" ng-if="!ctrl.readOnly">
-            <label class="col-sm-2 control-label" translate="mwForm.question.grid.rowLabel" translate-values="{row: ctrl.question.grid.rows.length+1}">Etykieta wiersza {{ctrl.question.grid.rows.length+1}}</label>
+            <label class="col-sm-2 control-label" translate-values="{row: ctrl.question.grid.rows.length+1}" translate>Row label {{ctrl.question.grid.rows.length+1}}</label>
             <div class="col-sm-10 col-md-8">
                 <div class="drag-handle">
                 </div>
@@ -52,7 +52,7 @@
 
         </div>
         <div class="mw-grid-item form-group add-new-item-widget" ng-if="!ctrl.readOnly">
-            <label class="col-sm-2 control-label"  translate="mwForm.question.grid.columnLabel" translate-values="{col: ctrl.question.grid.cols.length+1}">Etykieta kolumny {{ctrl.question.grid.cols.length+1}}</label>
+            <label class="col-sm-2 control-label" translate-values="{col: ctrl.question.grid.cols.length+1}" translate>Column label {{ctrl.question.grid.cols.length+1}}</label>
             <div class="col-sm-10 col-md-8">
                 <div class="drag-handle">
                 </div>

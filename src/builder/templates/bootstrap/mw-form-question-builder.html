@@ -16,7 +16,7 @@
 
                         <div class="checkbox" ng-if="ctrl.question.type=='radio' || ctrl.question.type=='select'">
                             <label>
-                                <input type="checkbox" ng-model="ctrl.question.pageFlowModifier" ng-change="ctrl.pageFlowModifierChanged()" ng-readonly="ctrl.readOnly"> <span translate="mwForm.pageFlow.afterQuestionAnswer">Przejdź do strony w oparciu o odpowiedź</span>
+                                <input type="checkbox" ng-model="ctrl.question.pageFlowModifier" ng-change="ctrl.pageFlowModifierChanged()" ng-readonly="ctrl.readOnly"> <span translate>Go to page based on answer</span>
                             </label>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                     </div>
                     <div ng-switch-when="number" class="form-inline">
                         <div class="range-config form-inline">
-                            <span translate="mwForm.question.number.min">Min</span>: <input class="form-control" type="number" ng-model="ctrl.question.min" max="{{ctrl.question.max}}" ng-readonly="ctrl.readOnly"/> <span translate="mwForm.question.number.max">Max</span>: <input class="form-control" type="number" min="{{ctrl.question.min}}" ng-model="ctrl.question.max" ng-readonly="ctrl.readOnly"/>
+                            <span translate>Min</span>: <input class="form-control" type="number" ng-model="ctrl.question.min" max="{{ctrl.question.max}}" ng-readonly="ctrl.readOnly"/> <span translate>Max</span>: <input class="form-control" type="number" min="{{ctrl.question.min}}" ng-model="ctrl.question.max" ng-readonly="ctrl.readOnly"/>
                         </div>
                         <br/>
                         <input class="form-control" type="number" disabled >
@@ -71,7 +71,7 @@
                     </div>
                     <div ng-switch-when="range" >
                         <div class="range-config form-inline">
-                            <span translate="mwForm.question.range.from">Range from</span> <input class="form-control" type="number" ng-model="ctrl.question.min" required ng-readonly="ctrl.readOnly"/> <span translate="mwForm.question.range.to">to</span> <input class="form-control" type="number" ng-model="ctrl.question.max" required ng-readonly="ctrl.readOnly"/>
+                            <span translate>Range from</span> <input class="form-control" type="number" ng-model="ctrl.question.min" required ng-readonly="ctrl.readOnly"/> <span translate="mwForm.question.range.to">to</span> <input class="form-control" type="number" ng-model="ctrl.question.max" required ng-readonly="ctrl.readOnly"/>
                         </div>
                         <br/>
                         <div class="mw-range">
@@ -84,7 +84,7 @@
                     </div>
                     <div ng-switch-when="star" class="form-inline">
                         <div class="range-config form-inline">
-                            <span translate="mwForm.question.star.no">Number of stars</span>
+                            <span translate>Number of stars</span>
                             <input class="form-control" type="number" ng-model="ctrl.question.noStars"
                                 min="3" max="10" step="1" required ng-readonly="ctrl.readOnly" ng-init="ctrl.question.noStars = ctrl.question.noStars || 5"/>
                         </div>
@@ -103,12 +103,12 @@
                 <div class="col-xs-8 col-xs-offset-2">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" ng-model="ctrl.question.required" ng-disabled="ctrl.readOnly"><span translate="mwForm.question.required">Required</span>
+                            <input type="checkbox" ng-model="ctrl.question.required" ng-disabled="ctrl.readOnly"><span translate>Required</span>
                         </label>
                     </div>
                 </div>
                 <div class="col-xs-2 text-center">
-                    <button type="button" class="btn btn-primary" ng-click="ctrl.save()" translate="mwForm.buttons.questionReady">Gotowe</button>
+                    <button type="button" class="btn btn-primary" ng-click="ctrl.save()" translate>Ready</button>
                 </div>
             </div>
 
@@ -156,7 +156,7 @@
                         </label>
                     </div>
                     <div class="radio" ng-if="ctrl.question.otherAnswer">
-                        <label><input type="radio"><span translate="mwForm.question.preview.otherAnswer">Inna</span>:</label>
+                        <label><input type="radio"><span translate>Inna</span>:</label>
                         <span class="form-inline">
                             <input type="text" class="form-control" disabled>
                         </span>
@@ -171,7 +171,7 @@
                         </label>
                     </div>
                     <div class="checkbox" ng-if="ctrl.question.otherAnswer">
-                        <label><input type="checkbox"><span translate="mwForm.question.preview.otherAnswer">Inna</span>:</label>
+                        <label><input type="checkbox"><span translate>Other</span>:</label>
                         <span class="form-inline">
                             <input type="text" class="form-control" disabled>
                         </span>
@@ -216,8 +216,8 @@
                     <table>
                         <thead>
                         <tr>
-                            <th translate="mwForm.question.priority.sorted">Sorted</th>
-                            <th translate="mwForm.question.priority.available">Available</th>
+                            <th translate>Sorted</th>
+                            <th translate>Available</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -249,10 +249,10 @@
                     <div class="form-inline" style="margin-bottom: 5px">
                         <div class="form-group">
                             <label translate="mwForm.question.division.assignedSumLabel">
-                                Przydzielono
+                                Assigned
                             </label>
                             <input type="number" class="form-control strict-validation" style="width: 80px" readonly value="0">
-                            <span>{{ctrl.question.unit}} <span translate="mwForm.question.division.fromRequiredLabel">z wymaganych</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}</span>
+                            <span>{{ctrl.question.unit}} <span translate>from required</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}</span>
                         </div>
 
                     </div>

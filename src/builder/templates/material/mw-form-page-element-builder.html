@@ -14,31 +14,31 @@
             </span>
             <span ng-switch-when="true">
                 <button type="button" class="move-down-button" ng-click="ctrl.moveDown()" ng-if="!ctrl.isLast" ng-attr-title="{{'mwForm.buttons.moveDown' | translate}}">
-                    <md-tooltip md-direction="top"><span translate="mwForm.buttons.moveDown">moveDown</span></md-tooltip>
+                    <md-tooltip md-direction="top"><span translate>moveDown</span></md-tooltip>
                     <i class="fa  fa-chevron-down"></i>
                 </button>
                 <button type="button" class="move-up-button" ng-click="ctrl.moveUp()" ng-if="!ctrl.isFirst" ng-attr-title="{{'mwForm.buttons.moveUp' | translate}}">
-                    <md-tooltip md-direction="top"><span translate="mwForm.buttons.moveUp">moveUp</span></md-tooltip>
+                    <md-tooltip md-direction="top"><span translate>moveUp</span></md-tooltip>
                     <i class="fa fa-chevron-up"></i>
                 </button>
                 <button type="button" class="remove-button" mw-confirm-click confirmed-action="ctrl.removeElement()" ng-attr-title="{{'mwForm.buttons.remove' | translate}}">
-                    <md-tooltip md-direction="top"><span translate="mwForm.buttons.remove">remove</span></md-tooltip>
+                    <md-tooltip md-direction="top"><span translate>remove</span></md-tooltip>
                     <i class="fa fa-trash"></i></button>
             </span>
             <span ng-switch-when="false">
                 <button type="button" aria-label="{{'mwForm.buttons.clone' | translate}}" aria-hidden="false" class="edit-button" ng-click="ctrl.cloneElement($event)" ng-if="!ctrl.readOnly"
                         ng-attr-title="{{'mwForm.buttons.clone' | translate}}">
-                    <md-tooltip md-direction="top"><span translate="mwForm.buttons.clone">clone</span></md-tooltip>
+                    <md-tooltip md-direction="top"><span translate>clone</span></md-tooltip>
                     <i class="fa fa-clone"></i>
                 </button>
                 <button type="button" aria-label="{{'mwForm.buttons.edit' | translate}}" aria-hidden="false" class="edit-button" ng-click="ctrl.editElement()" ng-if="!ctrl.readOnly"
                         ng-attr-title="{{'mwForm.buttons.edit' | translate}}">
-                    <md-tooltip md-direction="top"><span translate="mwForm.buttons.edit">edit</span></md-tooltip>
+                    <md-tooltip md-direction="top"><span translate>edit</span></md-tooltip>
                     <i class="fa fa-pencil"></i>
                 </button>
                 <button type="button" aria-label="{{'mwForm.buttons.view' | translate}}" aria-hidden="false" class="edit-button" ng-click="ctrl.editElement()" ng-if="ctrl.readOnly"
                         ng-attr-title="{{'mwForm.buttons.view' | translate}}">
-                    <md-tooltip md-direction="top"><span translate="mwForm.buttons.view">view</span></md-tooltip>
+                    <md-tooltip md-direction="top"><span translate>view</span></md-tooltip>
                     <i class="fa fa-eye"></i>
                 </button>
 

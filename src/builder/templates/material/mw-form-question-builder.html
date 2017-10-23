@@ -19,7 +19,7 @@
                     </md-input-container>
                     <div flex flex-offset-gt-md="5">
                         <md-checkbox  ng-if="ctrl.question.type=='radio' || ctrl.question.type=='select'" ng-model="ctrl.question.pageFlowModifier" ng-change="ctrl.pageFlowModifierChanged()" ng-readonly="ctrl.readOnly" aria-label="Go to page">
-                            <span translate="mwForm.pageFlow.afterQuestionAnswer">Przejdź do strony w oparciu o odpowiedź</span>
+                            <span translate>Go to page based on answer</span>
                         </md-checkbox>
 
 
@@ -105,7 +105,7 @@
                     </div>
                     <div ng-switch-when="star" class="form-inline">
                         <div class="range-config form-inline">
-                            <span translate="mwForm.question.star.no">Number of stars</span>
+                            <span translate>Number of stars</span>
                             <input class="form-control" type="number" ng-model="ctrl.question.noStars"
                                 min="3" max="10" step="1" required ng-readonly="ctrl.readOnly" ng-init="ctrl.question.noStars = ctrl.question.noStars || 5"/>
                         </div>
@@ -128,7 +128,7 @@
                 </div>
                 <div flex>
                     <md-checkbox  ng-model="ctrl.question.required" ng-disabled="ctrl.readOnly" flex>
-                        <span translate="mwForm.question.required">Required</span>
+                        <span translate>Required</span>
                     </md-checkbox>
                 </div>
 
@@ -191,7 +191,7 @@
                         <div layout="row" layout-align="start center" class="mw-question-other-answer"  ng-if="ctrl.question.otherAnswer">
                             <div>
                                 <md-radio-button disabled>
-                                    <span translate="mwForm.question.preview.otherAnswer">Inna</span>:
+                                    <span translate>Other</span>:
                                 </md-radio-button>
                             </div>
 
@@ -215,7 +215,7 @@
                     <div layout="row" layout-align="start center" class="mw-question-other-answer" ng-if="ctrl.question.otherAnswer">
                         <div>
                             <md-checkbox disabled >
-                                <span translate="mwForm.question.preview.otherAnswer">Inna</span>:
+                                <span translate>Other</span>:
                             </md-checkbox>
                         </div>
 
@@ -276,8 +276,8 @@
                     <table>
                         <thead>
                         <tr>
-                            <th translate="mwForm.question.priority.sorted">Sorted</th>
-                            <th translate="mwForm.question.priority.available">Available</th>
+                            <th translate>Sorted</th>
+                            <th translate>Available</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -316,7 +316,7 @@
                             <md-input-container md-no-float>
                                 <input type="number" class="form-control strict-validation" style="width: 80px" readonly value="0">
                             </md-input-container>
-                            <span>{{ctrl.question.unit}} <span translate="mwForm.question.division.fromRequiredLabel">z wymaganych</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}</span>
+                            <span>{{ctrl.question.unit}} <span translate>from required</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}</span>
                         </div>
                     </div>
                 </div>

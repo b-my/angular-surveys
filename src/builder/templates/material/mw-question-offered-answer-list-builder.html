@@ -42,8 +42,8 @@
             </md-input-container>
         </span>
         <span class="add-custom-answer"  ng-if="!ctrl.disableOtherAnswer && !ctrl.question.otherAnswer">
-            <span translate="mwForm.question.orLabel">or </span>
-            <md-button role="button" ng-click="ctrl.addCustomAnswer()" translate="mwForm.question.buttons.addOther">Dodaj "Inne"</md-button>
+            <span translate>or </span>
+            <md-button role="button" ng-click="ctrl.addCustomAnswer()" translate>Add 'Other'</md-button>
         </span>
     </div>
     <div class="mw-question-offered-answer custom-answer" ng-if="ctrl.question.otherAnswer">
@@ -54,7 +54,7 @@
             <i ng-if="ctrl.question.type=='radio'" class="fa fa-circle-thin fa-fw"></i>
             <i ng-if="ctrl.question.type=='checkbox'" class="fa fa-square-o fa-fw"></i>
         </div>
-        <label translate="mwForm.question.otherLabel">Inna: </label>
+        <label translate>Other: </label>
         <md-input-container>
             <input  type="text" value="{{'mwForm.question.userAnswer'|translate}}"  class="form-control offered-answer-value " readonly>
         </md-input-container>

@@ -32,8 +32,8 @@
             <input type="text" class="form-control  offered-answer-value" value="{{'mwForm.question.buttons.addOption'|translate}}">
         </span>
         <span class="add-custom-answer"  ng-if="!ctrl.disableOtherAnswer && !ctrl.question.otherAnswer">
-            <span translate="mwForm.question.orLabel">lub </span>
-            <button role="button" ng-click="ctrl.addCustomAnswer()" translate="mwForm.question.buttons.addOther">Dodaj "Inne"</button>
+            <span translate="mwForm.question.orLabel">or </span>
+            <button role="button" ng-click="ctrl.addCustomAnswer()" translate>Add 'Other'</button>
         </span>
     </div>
     <div class="mw-question-offered-answer custom-answer" ng-if="ctrl.question.otherAnswer">
@@ -44,7 +44,7 @@
             <i ng-if="ctrl.question.type=='radio'" class="fa fa-circle-thin fa-fw"></i>
             <i ng-if="ctrl.question.type=='checkbox'" class="fa fa-square-o fa-fw"></i>
         </div>
-        <label translate="mwForm.question.otherLabel">Inna: </label>
+        <label translate>Other: </label>
         <input  type="text" value="{{'mwForm.question.userAnswer'|translate}}"  class="form-control offered-answer-value " readonly>
         <button type="button" role="button" class="remove-item-button" ng-click="ctrl.removeCustomAnswer()" ng-if="!ctrl.readOnly"
                 uib-popover="{{'mwForm.buttons.remove' | translate}}" popover-trigger="'mouseenter'" popover-placement="top">

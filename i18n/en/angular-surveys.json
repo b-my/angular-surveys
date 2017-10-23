@@ -87,21 +87,21 @@
                     "name": "Email"
                 },
                 "range":{
-                    "name": "Range"
+                    "name": "Sliding scale"
                 },
                 "url":{
                     "name": "URL"
                 },
                 "star":{
-                    "name": "Star Rating"
+                    "name": "Star rating"
                 }
             },
             "text": "Question text",
             "type": "Question type",
             "required": "Required",
             "preview":{
-                "text":"Short answer text",
-                "textarea":"Long answer text",
+                "text":"",
+                "textarea":"",
                 "otherAnswer": "Other"
             },
             "division":{

@@ -25,7 +25,7 @@
                 <div layout="row" layout-align="start center" class="mw-question-other-answer"  ng-if="ctrl.question.otherAnswer">
                     <div>
                         <md-radio-button  ng-model="ctrl.isOtherAnswer" ng-value="true" name="other-answer-for-question-{{ctrl.question.id}}" ng-disabled="ctrl.readOnly" ng-readonly="ctrl.readOnly">
-                            <span translate="mwForm.question.preview.otherAnswer">Inna</span>:
+                            <span translate>Other</span>:
                         </md-radio-button>
                     </div>
                     <div>
@@ -46,7 +46,7 @@
             </div>
             <div layout="row" layout-align="start center" class="mw-question-other-answer"  ng-if="ctrl.question.otherAnswer">
                 <md-checkbox name="answer-for-question-{{ctrl.question.id}}" ng-model="ctrl.isOtherAnswer" ng-change="ctrl.otherAnswerCheckboxChanged()" ng-readonly="ctrl.readOnly" ng-disabled="ctrl.readOnly">
-                    <span translate="mwForm.question.preview.otherAnswer">Inna</span>:
+                    <span translate>Other</span>:
                 </md-checkbox>
                 <div>
                     <md-input-container>
@@ -115,13 +115,13 @@
             </div>
             <div class="form-inline" style="margin-bottom: 5px">
                 <div class="form-group">
-                    <label translate="mwForm.question.division.assignedSumLabel">
-                        Przydzielono
+                    <label translate>
+                        Assigned
                     </label>
                     <md-input-container md-no-float>
                         <input type="number" class="form-control strict-validation" ng-model="ctrl.divisionSum" min="{{ctrl.question.quantity}}" max="{{ctrl.question.quantity}}" style="width: 80px" readonly>
                     </md-input-container>
-                    <span>{{ctrl.question.unit}} <span translate="mwForm.question.division.fromRequiredLabel">z wymaganych</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}  <i ng-show="ctrl.divisionForm.$valid" class="fa fa-check" style="color:#008000;"></i></span>
+                    <span>{{ctrl.question.unit}} <span translate>from required</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}  <i ng-show="ctrl.divisionForm.$valid" class="fa fa-check" style="color:#008000;"></i></span>
                 </div>
 
             </div>

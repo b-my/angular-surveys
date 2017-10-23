@@ -1,7 +1,7 @@
 <div class="mw-form-image-builder-wrapper">
     <div class="mw-form-image-builder" ng-class="{'ng-submitted':ctrl.formSubmitted}">
         <div class="image-editor" ng-form="ctrl.form" ng-if="!ctrl.isPreview">
-            <button ng-if="!ctrl.image.src" ng-click="ctrl.selectImageButtonClicked()" type="button" class="btn btn-default" translate="mwForm.image.selectImageButton">Select image</button>
+            <button ng-if="!ctrl.image.src" ng-click="ctrl.selectImageButtonClicked()" type="button" class="btn btn-default" translate>Select image</button>
 
             <div class="image-edition row" ng-if="ctrl.image.src" >
                 <div class="col-md-12" ng-class="'align-'+ctrl.image.align">
