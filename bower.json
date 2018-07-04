@@ -36,8 +36,6 @@
   },
   "devDependencies": {
     "bootstrap-sass": "3.x",
-    "angular-translate-loader-partial": "2.x",
-    "angular-translate-loader-static-files": "2.x",
     "angular-mocks": "~1.4.8",
     "angular-material": "^1.0.7"
   },

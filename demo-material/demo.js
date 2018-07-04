@@ -1,12 +1,5 @@
-angular.module('app', ['ngMaterial', 'mwFormBuilder', 'mwFormViewer', 'mwFormUtils', 'pascalprecht.translate', 'monospaced.elastic'])
-    .config(function($translateProvider){
-        $translateProvider.useStaticFilesLoader({
-            prefix: '../dist/i18n/',
-            suffix: '/angular-surveys.json'
-        });
-        $translateProvider.preferredLanguage('en');
-    })
-    .controller('DemoController', function($q,$http, $translate, mwFormResponseUtils) {
+angular.module('app', ['ngMaterial', 'mwFormBuilder', 'mwFormViewer', 'mwFormUtils', 'monospaced.elastic'])
+    .controller('DemoController', function($q,$http, mwFormResponseUtils) {
 
         var ctrl = this;
         ctrl.cmergeFormWithResponse = false;
@@ -90,10 +83,6 @@ angular.module('app', ['ngMaterial', 'mwFormBuilder', 'mwFormViewer', 'mwFormUti
             if(ctrl.formBuilder.reset){
                 ctrl.formBuilder.reset();
             }
-        };
-
-        ctrl.changeLanguage = function (languageKey) {
-            $translate.use(languageKey);
         };
 
         ctrl.getMerged=function(){

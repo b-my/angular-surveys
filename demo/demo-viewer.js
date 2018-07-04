@@ -1,12 +1,5 @@
-angular.module('app', ['ui.bootstrap', 'mwFormViewer', 'pascalprecht.translate', 'monospaced.elastic'])
-.config(function($translateProvider){
-    $translateProvider.useStaticFilesLoader({
-        prefix: '../dist/i18n/',
-        suffix: '/angular-surveys.json'
-    });
-    $translateProvider.preferredLanguage('en');
-})
-.controller('DemoController', function($q, $http, $translate, $rootScope) {
+angular.module('app', ['ui.bootstrap', 'mwFormViewer', 'monospaced.elastic'])
+.controller('DemoController', function($q, $http, $rootScope) {
 
     var ctrl = this;
     ctrl.viewerReadOnly = false;

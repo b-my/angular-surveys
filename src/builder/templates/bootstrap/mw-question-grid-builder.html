@@ -22,12 +22,12 @@
 
         </div>
         <div class="mw-grid-item form-group add-new-item-widget" ng-if="!ctrl.readOnly">
-            <label class="col-sm-2 control-label" translate="mwForm.question.grid.rowLabel" translate-values="{row: ctrl.question.grid.rows.length+1}">Etykieta wiersza {{ctrl.question.grid.rows.length+1}}</label>
+            <label class="col-sm-2 control-label" translate>Row {{ctrl.question.grid.rows.length+1}}</label>
             <div class="col-sm-10 col-md-8">
                 <div class="drag-handle">
                 </div>
                 <span ng-click="ctrl.addNewRow()" role="button">
-                    <input type="text"  required class="form-control" value="{{'mwForm.question.grid.clickToAddRow'|translate}}">
+                    <input type="text"  required class="form-control" value="Click to add row">
                 </span>
             </div>
         </div>
@@ -52,12 +52,12 @@
 
         </div>
         <div class="mw-grid-item form-group add-new-item-widget" ng-if="!ctrl.readOnly">
-            <label class="col-sm-2 control-label"  translate="mwForm.question.grid.columnLabel" translate-values="{col: ctrl.question.grid.cols.length+1}">Etykieta kolumny {{ctrl.question.grid.cols.length+1}}</label>
+            <label class="col-sm-2 control-label"  translate>Column {{ctrl.question.grid.cols.length+1}}</label>
             <div class="col-sm-10 col-md-8">
                 <div class="drag-handle">
                 </div>
                 <span ng-click="ctrl.addNewCol()" role="button" >
-                    <input type="text"  required class="form-control" value="{{'mwForm.question.grid.clickToAddColumn'|translate}}">
+                    <input type="text"  required class="form-control" value="Click to add column">
                 </span>
             </div>
         </div>

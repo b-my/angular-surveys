@@ -11,7 +11,7 @@
             </div>
             <input wd-focus-me="ctrl.isNewAnswer[answer.id]" type="text" ng-model="answer.value" ng-keypress="ctrl.keyPressedOnInput($event,answer)" required class="form-control offered-answer-value " ng-readonly="ctrl.readOnly">
             <button role="button" class="remove-item-button" ng-click="ctrl.removeOfferedAnswer(answer)" ng-if="!ctrl.readOnly"
-                    uib-popover="{{'mwForm.buttons.remove' | translate}}" popover-trigger="'mouseenter'" popover-placement="top">
+                    uib-popover="Remove" popover-trigger="'mouseenter'" popover-placement="top">
                 <i class="fa fa-times"></i>
             </button>
             <span ng-if="ctrl.question.pageFlowModifier" class="form-inline">
@@ -33,7 +33,7 @@
         </span>
         <span class="add-custom-answer"  ng-if="!ctrl.disableOtherAnswer && !ctrl.question.otherAnswer">
             <span translate="mwForm.question.orLabel">lub </span>
-            <button role="button" ng-click="ctrl.addCustomAnswer()" translate="mwForm.question.buttons.addOther">Dodaj "Inne"</button>
+            <button role="button" ng-click="ctrl.addCustomAnswer()" translate>Add "Other"</button>
         </span>
     </div>
     <div class="mw-question-offered-answer custom-answer" ng-if="ctrl.question.otherAnswer">
@@ -45,9 +45,9 @@
             <i ng-if="ctrl.question.type=='checkbox'" class="fa fa-square-o fa-fw"></i>
         </div>
         <label translate="mwForm.question.otherLabel">Inna: </label>
-        <input  type="text" value="{{'mwForm.question.userAnswer'|translate}}"  class="form-control offered-answer-value " readonly>
+        <input  type="text" value="User answer"  class="form-control offered-answer-value " readonly>
         <button type="button" role="button" class="remove-item-button" ng-click="ctrl.removeCustomAnswer()" ng-if="!ctrl.readOnly"
-                uib-popover="{{'mwForm.buttons.remove' | translate}}" popover-trigger="'mouseenter'" popover-placement="top">
+                uib-popover="Remove" popover-trigger="'mouseenter'" popover-placement="top">
             <i class="fa fa-times"></i>
         </button>
     </div>

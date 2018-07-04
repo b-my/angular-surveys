@@ -1,4 +1,4 @@
-angular.module('mwFormBuilder', ['ngSanitize','ng-sortable', 'pascalprecht.translate']);
+angular.module('mwFormBuilder', ['ngSanitize','ng-sortable']);
 
 angular.module('mwFormBuilder')
     .service('mwFormUuid', function () {

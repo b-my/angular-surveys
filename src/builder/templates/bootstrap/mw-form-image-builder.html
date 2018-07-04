@@ -21,7 +21,7 @@
 
                     <div class="form-group">
                         <label ng-attr-for="image-caption-{{ctrl.id}}" class="col-sm-2 control-label"
-                            translate="mwForm.image.caption">Podpis</label>
+                            translate="mwForm.image.caption">Image caption</label>
                         <div class="col-sm-8">
                             <input type="text" class="form-control" name="text" ng-attr-id="image-caption-{{ctrl.id}}" ng-model="ctrl.image.caption" ng-readonly="ctrl.readOnly">
                         </div>
@@ -35,7 +35,7 @@
             <div class="row"  ng-if="ctrl.image.src">
                 <br/> <br/>
                 <div class="col-xs-2 col-xs-offset-10 text-center">
-                    <button type="button" class="btn btn-primary" ng-click="ctrl.save()" translate="mwForm.buttons.questionReady">Gotowe</button>
+                    <button type="button" class="btn btn-primary" ng-click="ctrl.save()" translate="mwForm.buttons.questionReady">Ready</button>
                 </div>
             </div>
 
